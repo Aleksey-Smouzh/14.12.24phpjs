@@ -18,10 +18,21 @@ array_pop($liczby); //usun perwszi element
 array_shift($liczby); // usun ostatni element
 print_r($liczby);
 
+foreach($liczby as $index => $liczba){
+echo "element $index: $liczba </br>";
+}
+
+$osoba = new stdClass();
+$osoba->imie = "jan";
+$osoba->wiek = 25;
+
+$osoba->miasto="Warszawa";
 
 
-
-
+//print_r($osoba); to nie dziala dla obiektow
+foreach($osoba as $klucz => $wartosc){
+    echo"$klucz: $wartosc </br>";
+}
 
 
 
