@@ -67,3 +67,45 @@ console.log(parzyste)
 
 let potegi = liczby.map(liczba=>liczba*liczba)
 console.log(potegi)
+console.log(...liczby, 11,12)
+// ... operator spred razpokowanie
+
+
+
+let liczby2 = liczby
+// liczby2.shift()
+// liczby2.push(16)
+// console.log("liczby2:"+liczby2)
+// console.log("liczby:"+liczby)
+
+
+let liczby3 =[...liczby]
+liczby3.shift()
+liczby3.push(11)
+liczby3.unshift(0)
+liczby3.pop()
+
+console.log("liczby:"+liczby)
+console.log("liczby2:"+liczby2)
+console.log("liczby3:"+liczby2)
+
+
+
+
+const suma = (a,b,y,...resztaxd)=>{
+console.log(a)
+console.log(b)
+console.log(y)
+console.log(resztaxd)
+}
+suma(1,23,6446.7,75757,434,75686,252,86585,8636582,357285,)
+
+
+let obiekt = {miasto: 'Warszawa', kraj:"gonduras"}
+
+let obiekt4 = {...obiekt}
+obiekt.wartost = "1"
+obiekt4.cos = 'soc'
+
+console.log(obiekt)
+console.log(obiekt4)
