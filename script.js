@@ -30,3 +30,28 @@ console.log(obiekt1)
 for(let klucz in obiekt1){
     console.log(klucz+ ':' +obiekt1[klucz])
 }
+
+
+// pentle for, while. do-while
+
+
+for(let i =0; i <= 5; i++){
+    console.log("i:"+i)
+}
+
+//for mozno zamenit while
+
+let j = 0;
+while (j<=5) {
+
+console.log('j:'+j) 
+j++
+}
+
+
+let k = 0
+do{
+    console.log('k:'+k)
+k++
+
+}while(k<=5)
