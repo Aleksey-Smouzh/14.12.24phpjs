@@ -55,3 +55,15 @@ do{
 k++
 
 }while(k<=5)
+
+
+    // filtr map operator
+
+    let liczby = [1,"2",3,4,5,6,7,8,9,10]
+let parzyste = liczby.filter(liczba => liczba % 2 ===0);
+
+console.log(parzyste)
+
+
+let potegi = liczby.map(liczba=>liczba*liczba)
+console.log(potegi)
